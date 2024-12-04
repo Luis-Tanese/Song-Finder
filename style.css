@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.results {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.song {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #222;
+    border-radius: 5px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.song:hover {
+    transform: scale(1.02);
+    background-color: #333;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.get-lyrics {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.get-lyrics:hover {
+    background-color: #555;
+}
+
+.lyrics {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #222;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.lyrics-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.spinner {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s infinite linear;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.results,
+.lyrics {
+    display: none;
+}
+
+.results.visible,
+.lyrics.visible {
+    display: block;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
